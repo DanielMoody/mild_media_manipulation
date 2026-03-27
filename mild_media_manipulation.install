@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function mild_media_manipulation_install() {
+  $formats = [
+    'basic_html',
+    'full_html',
+  ];
+
+  foreach ($formats as $format_id) {
+    $config_name = "filter.format.$format_id";
+
+    $config = \Drupal::configFactory()->getEditable($config_name);
+
+    if ($config->isNew()) {
+      continue;
+    }
+
+    $filters = $config->get('filters') ?? [];
+
+    // Skip if already enabled.
+    if (isset($filters['mild_media_manipulation'])) {
+      continue;
+    }
+
+    $filters['mild_media_manipulation'] = [
+      'id' => 'mild_media_manipulation',
+      'provider' => 'mild_media_manipulation',
+      'status' => TRUE,
+      'weight' => 10,
+      'settings' => [],
+    ];
+
+    $config->set('filters', $filters)->save();
+  }
+}

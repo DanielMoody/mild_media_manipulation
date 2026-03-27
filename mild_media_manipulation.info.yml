@@ -1,0 +1,7 @@
+name: Mild Media Manipulation
+type: module
+description: Provides wrapper-based media styling with optional captions.
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - filter

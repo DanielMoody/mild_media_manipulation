@@ -1,0 +1,45 @@
+.mmm {
+  margin: 1rem 0;
+}
+
+.mmm img,
+.mmm picture,
+.mmm video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Float left */
+.mmm--left-side {
+  float: left;
+  margin-right: 1rem;
+  max-width: 40%;
+}
+
+/* Float right */
+.mmm--right-side {
+  float: right;
+  margin-left: 1rem;
+  max-width: 40%;
+}
+
+/* Two-column layout */
+.mmm--two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Centered */
+.mmm--centered {
+  text-align: center;
+}
+
+/* Caption styling */
+.mmm__caption {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+  text-align: center;
+}
