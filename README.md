@@ -5,6 +5,10 @@ Mild Media Manipulation is a lightweight Drupal text filter that allows editors 
 It wraps content in semantic containers (`<div>` or `<figure>`) and applies predefined CSS classes, optionally including captions.
 
 ---
+## Installation
+Install via Composer:
+
+`composer require cms-alchemy/mild-media-manipulation`
 
 ## Features
 
