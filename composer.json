@@ -1,5 +1,5 @@
 {
-  "name": "cms-alchemy/mild_media_manipulation",
+  "name": "cms-alchemy/mild-media-manipulation",
   "description": "Token-based media layout wrappers for Drupal using controlled CSS variants.",
   "type": "drupal-module",
   "license": "GPL-3.0-or-later",
