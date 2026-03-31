@@ -6,9 +6,11 @@ It wraps content in semantic containers (`<div>` or `<figure>`) and applies pred
 
 ---
 ## Installation
-Install via Composer:
 
-`composer require cms-alchemy/mild-media-manipulation`
+```
+composer require cms-alchemy/mild-media-manipulation
+drush en mild_media_manipulation
+```
 
 ## Features
 
